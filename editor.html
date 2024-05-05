@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cbba5d06f5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Buddy</a>
+
+       
+
+        <nav class="navbar">
+            <a href="/index.html" >Home</a>
+        </nav>
+    </header>
+    <section class="language" id="lang">
+        <h2 class="heading">
+            Language can be <span>Compile</span>
+        </h2>
+        <div class="lang-container">
+            <div class="lang-box">
+                <i class='bx bxl-html5'></i>
+                <h3>HTML</h3>
+                <p> 
+                    HTML (Hypertext Markup Language) is the backbone of web development, defining the structure and content of web pages. It utilizes tags to designate elements like headings, paragraphs, and links. Essential for creating interactive and accessible websites, HTML works seamlessly with CSS and JavaScript to shape the visual and functional aspects of the web.
+                </p>
+            </div>
+
+            <div class="lang-box">
+                <i class='bx bxl-css3' ></i>
+                <h3>CSS</h3>
+                <p> 
+                    CSS (Cascading Style Sheets) enhances the presentation of HTML documents, controlling layout, colors, fonts, and other visual aspects. It enables web designers to create aesthetically pleasing and responsive websites by applying styles to HTML elements. CSS works alongside HTML and JavaScript to provide a complete web development toolkit.
+                </p>
+            </div>
+
+            <div class="lang-box">
+                <i class='bx bxl-javascript' ></i>
+                <h3>JavaScript</h3>
+                <p> 
+                    JavaScript adds interactivity and dynamic behavior to web pages, enabling actions like form validation, animations, and user interface enhancements. As a client-side scripting language, JavaScript executes in the browser, manipulating HTML and CSS to create engaging user experiences. It's integral for building modern, interactive web applications alongside HTML and CSS.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="home" id="home">
+        <h3 class="heading"><span>Compiler BuDdY</span></h3>
+        <div class="container">
+            <div class="left">
+                <label><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea id="html-code" onkeyup="run()"></textarea>
+    
+                <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea id="css-code" onkeyup="run()"></textarea>
+                
+                <label><i class="fa-brands fa-js"></i>Javascript</label>
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+            <div class="right">
+                <label><i class="fa-solid fa-play"></i></label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
